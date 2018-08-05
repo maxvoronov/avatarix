@@ -26,8 +26,13 @@ $avatarix                                // Set collections of avatar parts
 
 $userAvatar = $avatarix->render();
 $userAvatar->save('/path/to/avatar.png');       // Save generated avatar into file
-$userAvatar->show('png');                       // ... or output with image headers
+$userAvatar->show('png');                       // ... and output with image headers
 ```
+
+You can also look at [an example](examples).
+
+## Special Thanks
+Special thanks to @matveyco and his [8biticon Project](https://github.com/matveyco/8biticon/) for avatar sprites.
 
 ## License
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
