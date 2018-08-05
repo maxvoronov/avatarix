@@ -1,0 +1,32 @@
+{
+    "name": "maxvoronov/avatarix",
+    "description": "Avatars generating library",
+    "keywords": ["avatarix", "avatars", "generator", "otus"],
+    "minimum-stability": "stable",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Max Voronov",
+            "email": "maxivoronov@gmail.com",
+            "homepage": "https://github.com/MaxVoronov",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.0",
+        "imagine/imagine": "^0.7.1"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "MaxVoronov\\": "src"
+        }
+    },
+    "scripts": {
+        "test": "composer phpcs",
+        "phpcs": "vendor/bin/phpcs --standard=PSR2 --colors --extensions=php --encoding=utf-8 ./src -p -s"
+    }
+}
